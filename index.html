@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="A birthday film, reserved for Lacey." />
+  <title>Reserved for Lacey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23ed1b2f'/%3E%3Cpath d='M32 49S12 38 12 24c0-9 11-12 20-3 9-9 20-6 20 3 0 14-20 25-20 25Z' fill='%23fff7e8'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <audio id="birthday-song" loop preload="metadata"><source src="assets/song.mp3" type="audio/mpeg" /></audio>
+  <button class="sound" type="button" aria-label="Play music" aria-pressed="false"><span class="equalizer"><i></i><i></i><i></i></span><b>sound on</b></button>
+  <main>
+    <section class="gate is-active" aria-label="Entrance">
+      <div class="gate-border"></div>
+      <p class="gate-kicker">PRIVATE SCREENING · ONE GUEST ONLY</p>
+      <div class="reserved-card"><span>THIS SEAT IS</span><h1>Reserved<br /><em>for Lacey.</em></h1><p>If you’re not Lacey, go away.</p></div>
+      <button class="admit" type="button">I am Lacey <span>→</span></button>
+      <p class="tiny-warning">Everyone else: go away</p>
+    </section>
+
+    <section class="cinema" aria-label="Birthday opening" aria-hidden="true">
+      <div class="theatre-light"></div>
+      <div class="curtain curtain--left"></div><div class="curtain curtain--right"></div>
+      <div class="cinema-screen">
+        <p class="feature-label">TONIGHT’S FEATURE PRESENTATION</p>
+        <div class="birthday-title"><span>Happy Birthday</span><strong>to you.</strong></div>
+        <div class="race-name" aria-label="Lacey racing onto the screen">
+          <div class="speed-lines"><i></i><i></i><i></i><i></i></div>
+          <div class="f1-car">
+            <i class="rear-wing"></i><i class="front-wing"></i><i class="car-floor"></i>
+            <div class="cockpit"><i class="halo"></i><span>01</span></div>
+            <div class="car-body"><b>LACEY</b></div>
+            <i class="nose"></i><i class="wheel wheel--rear-top"></i><i class="wheel wheel--rear-bottom"></i><i class="wheel wheel--front-top"></i><i class="wheel wheel--front-bottom"></i>
+          </div>
+        </div>
+      </div>
+      <button class="skip-intro" type="button">skip intro</button><div class="falling-things" aria-hidden="true"></div>
+    </section>
+
+    <section class="story" aria-label="Birthday story" aria-hidden="true">
+      <article class="chapter chapter--heart is-active">
+        <div class="chapter-index"><span>01</span><i></i><span>05</span></div><div class="big-heart" aria-hidden="true">♡</div>
+        <div class="postcard" aria-hidden="true"><small>FROM</small><strong>A FEW<br />DAYS AGO</strong></div>
+        <div class="chapter-content"><p class="eyebrow">THIS MIGHT SOUND A LITTLE CRAZY</p><h2>I know we only<br />met like <br /> <em>9 days ago…</em></h2><p class="chapter-copy">but you already mean so much to me. Somehow, in such a short time, talking to you has become one of the easiest and best parts of my day.</p><p class="aside-note">and I’m really, really, REALLY glad we met.</p></div>
+        <button class="next" type="button">keep going <span>→</span></button>
+      </article>
+
+      <article class="chapter chapter--f1run">
+        <div class="chapter-index"><span>02</span><i></i><span>05</span></div><div class="checkers" aria-hidden="true"></div>
+        <div class="track-map" aria-hidden="true"><svg viewBox="0 0 700 600"><path d="M51 495c108-41 48-158 137-180 75-18 106 50 169 4 74-55-18-139 65-180 65-31 80 70 189 17"/><circle cx="51" cy="495" r="8"/><circle cx="611" cy="156" r="8"/></svg></div>
+        <div class="f1-stat" aria-hidden="true"><small>MY SURVIVAL ODDS</small><strong>12%</strong><span>STILL SHOWING UP</span></div>
+        <div class="runner-lane" aria-hidden="true"><span>RUN WITH YOU</span><i></i><span>WATCH WITH YOU</span></div>
+        <div class="chapter-content"><p class="eyebrow">YOUR WORLD LOOKS SO PRETTY FROM HERE <br />(not as pretty as you tho)</p><h2>You make me want<br />to <em>join in.</em></h2><p class="chapter-copy">You make me wanna watch F1 just so I can talk to you about every race—and run beside you even though I’m probably going to die halfway through.</p><p class="aside-note">Just slow down occasionally so I can like pretend I’m keeping up.</p></div>
+        <button class="next" type="button">catch your breath <span>→</span></button>
+      </article>
+
+      <article class="chapter chapter--laugh">
+        <div class="chapter-index"><span>03</span><i></i><span>05</span></div>
+        <div class="laugh-type" aria-hidden="true"><span>HA</span><span>HA</span><span>HA</span><span>♡</span></div>
+        <div class="voice-note" aria-hidden="true"><div class="voice-avatar">L</div><div><small>voice note from Lacey</small><span>0:17</span></div><button type="button" tabindex="-1">▶</button></div>
+        <div class="chapter-content"><p class="eyebrow">YOUR LAUGH. THE WAY YOU TALK.</p><h2>It’s so<br /><em>freaking cute.</em></h2><p class="chapter-copy">The way you tell a story. The little things you say. That laugh that makes me laugh before I even know what happened.</p><p class="aside-note">My only problem with any of it is that you’re not next to me right now.</p></div>
+        <button class="next" type="button">call me maybe <span>→</span></button>
+      </article>
+
+      <article class="chapter chapter--calls">
+        <div class="chapter-index"><span>04</span><i></i><span>05</span></div><div class="call-orbits" aria-hidden="true"><i></i><i></i><i></i></div><div class="call-time"><span>05:00:00</span><small>and somehow it felt like five minutes</small></div><div class="waveform" aria-hidden="true"></div>
+        <div class="chapter-content"><p class="eyebrow">OUR ACCIDENTAL FIVE-HOUR CALLS</p><h2>“Okay, I should<br />probably sleep…”</h2><p class="chapter-copy">Then another story. Another laugh. Another hour gone without either of us noticing. I didn’t know five hours could disappear that fast until I met you.</p><p class="aside-note">And for the record, I was never bored once.</p></div>
+        <button class="next" type="button">last page <span>→</span></button>
+      </article>
+
+      <article class="chapter chapter--future">
+        <div class="chapter-index"><span>05</span><i></i><span>05</span></div><div class="future-lines" aria-hidden="true"><span>RUNS</span><span>RACE DAYS</span><span>LATE CALLS</span><span>WHATEVER’S NEXT</span></div>
+        <div class="chapter-content future-note"><p class="eyebrow">A NOTE TO THE FUTURE</p><h2>There’s so much<br /><em>we haven’t done yet.</em></h2><p class="chapter-copy">I don’t know what all of it looks like yet. Maybe more five-hour calls. Maybe a run where I try very hard to keep up. Maybe like our first trip together. Idk.</p><p class="chapter-copy">I just hope this is the first page—not the whole story.</p><p class="signoff">Happy birthday, Lacey. I hope your day is a beautiful as you. <span>♡</span></p></div>
+        <button class="replay" type="button">replay the film <span>↺</span></button>
+      </article>
+    </section>
+  </main>
+  <div class="story-progress" aria-hidden="true"><span></span></div><script src="script.js"></script>
+</body>
+</html>
